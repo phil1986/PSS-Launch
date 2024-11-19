@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="PSS_Launch" GeneratedClassName="Settings1">
+  <Profiles />
+  <Settings>
+    <Setting Name="FileName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">.fmp12</Value>
+    </Setting>
+    <Setting Name="URL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">fms.smdltd.co.uk</Value>
+    </Setting>
+    <Setting Name="WindowName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Precast Structural Solutions - Launch</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
