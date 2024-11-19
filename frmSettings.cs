@@ -9,6 +9,7 @@ using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Reflection.Emit;
 
 namespace PSS_Launch
 {
@@ -23,12 +24,13 @@ namespace PSS_Launch
 
         private void frmSettings_Load(object sender, EventArgs e)
         {
-            var appVersion = Assembly.GetExecutingAssembly().GetName().Version;
+            //var appVersion = Assembly.GetExecutingAssembly().GetName().Version;
+            Version appVersion = Assembly.GetExecutingAssembly().GetName().Version;
             // Load settings into text boxes
             txtDomain.Text = Settings1.Default.URL;
             txtFileName.Text = Settings1.Default.PSS;
             txtWindowTitle.Text = Settings1.Default.WindowName;
-            lblVersion.Text = string.Format("v{0}",appVersion);
+            lblVersion.Text = $"v: {appVersion.Major}.{appVersion.Minor}.{appVersion.Build}.{appVersion.Revision}";
         }
 
         private void btnSave_Click(object sender, EventArgs e)
