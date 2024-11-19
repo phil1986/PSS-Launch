@@ -26,7 +26,7 @@ namespace PSS_Launch
             var appVersion = Assembly.GetExecutingAssembly().GetName().Version;
             // Load settings into text boxes
             txtDomain.Text = Settings1.Default.URL;
-            txtFileName.Text = Settings1.Default.FileName;
+            txtFileName.Text = Settings1.Default.PSS;
             txtWindowTitle.Text = Settings1.Default.WindowName;
             lblVersion.Text = string.Format("v{0}",appVersion);
         }
@@ -36,7 +36,7 @@ namespace PSS_Launch
             // Update settings from the user inputs
             Settings1.Default.WindowName = txtWindowTitle.Text;
             Settings1.Default.URL = txtDomain.Text;
-            Settings1.Default.FileName = txtFileName.Text;
+            Settings1.Default.PSS = txtFileName.Text;
 
             // Save the settings to persist them
             Settings1.Default.Save();

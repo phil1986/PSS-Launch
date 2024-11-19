@@ -27,9 +27,9 @@ namespace PSS_Launch
                 Settings1.Default.Save();
             }
 
-            if (string.IsNullOrEmpty(Settings1.Default.FileName))
+            if (string.IsNullOrEmpty(Settings1.Default.PSS))
             {
-                Settings1.Default.FileName = "PSS.fmp12";
+                Settings1.Default.PSS = "PSS.fmp12";
                 Settings1.Default.Save();
             }
         }
@@ -43,7 +43,7 @@ namespace PSS_Launch
         {
             // Get domain and filename from the settings
             string domain = Settings1.Default.URL;
-            string fileName = Settings1.Default.FileName;
+            string fileName = Settings1.Default.PSS;
 
             // Construct the full URL
             string url = $"fmp://{domain}/{fileName}";
@@ -70,7 +70,7 @@ namespace PSS_Launch
         private void picBtnPSS_MouseEnter(object sender, EventArgs e)
         {
             string url = Settings1.Default.URL;
-            string fn = Settings1.Default.FileName;
+            string fn = Settings1.Default.PSS;
             string tooltip = $"fmp://{url}/{fn}";
             lblInfo.Text = tooltip;
             lblEnter.Font = new Font(this.lblEnter.Font, this.lblEnter.Font.Style | FontStyle.Underline);

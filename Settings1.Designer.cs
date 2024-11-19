@@ -25,13 +25,13 @@ namespace PSS_Launch {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute(".fmp12")]
-        public string FileName {
+        [global::System.Configuration.DefaultSettingValueAttribute("PSS.fmp12")]
+        public string PSS {
             get {
-                return ((string)(this["FileName"]));
+                return ((string)(this["PSS"]));
             }
             set {
-                this["FileName"] = value;
+                this["PSS"] = value;
             }
         }
         
@@ -49,7 +49,7 @@ namespace PSS_Launch {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Precast Structural Solutions - Launch")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Precast Structural Solutions | Launch")]
         public string WindowName {
             get {
                 return ((string)(this["WindowName"]));
