@@ -37,11 +37,12 @@
             txtWindowTitle = new TextBox();
             lblTitle = new Label();
             lblVersion = new Label();
+            chkExitAfterLaunch = new CheckBox();
             SuspendLayout();
             // 
             // btnSave
             // 
-            btnSave.Location = new Point(178, 195);
+            btnSave.Location = new Point(178, 222);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(89, 34);
             btnSave.TabIndex = 0;
@@ -83,7 +84,7 @@
             // 
             // btnClose
             // 
-            btnClose.Location = new Point(277, 195);
+            btnClose.Location = new Point(277, 222);
             btnClose.Name = "btnClose";
             btnClose.Size = new Size(89, 34);
             btnClose.TabIndex = 0;
@@ -110,17 +111,28 @@
             // lblVersion
             // 
             lblVersion.AutoSize = true;
-            lblVersion.Location = new Point(12, 205);
+            lblVersion.Location = new Point(12, 232);
             lblVersion.Name = "lblVersion";
             lblVersion.Size = new Size(45, 15);
             lblVersion.TabIndex = 3;
             lblVersion.Text = "Version";
             // 
+            // chkExitAfterLaunch
+            // 
+            chkExitAfterLaunch.AutoSize = true;
+            chkExitAfterLaunch.Location = new Point(28, 188);
+            chkExitAfterLaunch.Name = "chkExitAfterLaunch";
+            chkExitAfterLaunch.Size = new Size(156, 19);
+            chkExitAfterLaunch.TabIndex = 4;
+            chkExitAfterLaunch.Text = "Close the launcher after?";
+            chkExitAfterLaunch.UseVisualStyleBackColor = true;
+            // 
             // frmSettings
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(382, 241);
+            ClientSize = new Size(382, 265);
+            Controls.Add(chkExitAfterLaunch);
             Controls.Add(lblVersion);
             Controls.Add(lblFileName);
             Controls.Add(lblTitle);
@@ -156,5 +168,6 @@
         private TextBox txtWindowTitle;
         private Label lblTitle;
         private Label lblVersion;
+        private CheckBox chkExitAfterLaunch;
     }
 }

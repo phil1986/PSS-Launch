@@ -11,5 +11,8 @@
     <Setting Name="WindowName" Type="System.String" Scope="User">
       <Value Profile="(Default)">Precast Structural Solutions | Launch</Value>
     </Setting>
+    <Setting Name="exitAfterLaunch" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

@@ -9,7 +9,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationIcon>pss_Li9_icon.ico</ApplicationIcon>
     <PackageProjectUrl>https://github.com/phil1986/PSS-Launch</PackageProjectUrl>
-    <AssemblyVersion>1.0.0.2</AssemblyVersion>
+    <AssemblyVersion>1.0.0.3</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>

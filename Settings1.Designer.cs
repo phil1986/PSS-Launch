@@ -58,5 +58,17 @@ namespace PSS_Launch {
                 this["WindowName"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool exitAfterLaunch {
+            get {
+                return ((bool)(this["exitAfterLaunch"]));
+            }
+            set {
+                this["exitAfterLaunch"] = value;
+            }
+        }
     }
 }

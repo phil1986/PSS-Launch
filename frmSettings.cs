@@ -30,6 +30,7 @@ namespace PSS_Launch
             txtDomain.Text = Settings1.Default.URL;
             txtFileName.Text = Settings1.Default.PSS;
             txtWindowTitle.Text = Settings1.Default.WindowName;
+            chkExitAfterLaunch.Checked = Settings1.Default.exitAfterLaunch;
             lblVersion.Text = $"v: {appVersion.Major}.{appVersion.Minor}.{appVersion.Build}.{appVersion.Revision}";
         }
 
@@ -39,6 +40,7 @@ namespace PSS_Launch
             Settings1.Default.WindowName = txtWindowTitle.Text;
             Settings1.Default.URL = txtDomain.Text;
             Settings1.Default.PSS = txtFileName.Text;
+            Settings1.Default.exitAfterLaunch = chkExitAfterLaunch.Checked;
 
             // Save the settings to persist them
             Settings1.Default.Save();

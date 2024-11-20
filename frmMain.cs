@@ -34,11 +34,6 @@ namespace PSS_Launch
             }
         }
 
-        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void picBtnPSS_Click(object sender, EventArgs e)
         {
             // Get domain and filename from the settings
@@ -59,13 +54,16 @@ namespace PSS_Launch
                 };
 
                 System.Diagnostics.Process.Start(psi);
+                if (Settings1.Default.exitAfterLaunch == true)
+                {
+                    Application.Exit();
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Failed to open URL: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
 
         private void picBtnPSS_MouseEnter(object sender, EventArgs e)
         {
